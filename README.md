@@ -7,10 +7,10 @@ You can use this by deploying this to Cloudflare Pages if you want.
 # Guides
 ## Deployment
 1. Clone the repo
-2. Connect to Cloudflare Pages
-4. Configure DB
-3. Migrate DB
-6. Set Env
+2. Create DB1 in Cloudflare Dashboard named `linky`
+3. Create wrangler.toml from the example
+4. Migrate DB
+5. Connect to Cloudflare Pages
 8. open /seeder on first visit.
 
 ## Usage
@@ -20,25 +20,21 @@ You can use this by deploying this to Cloudflare Pages if you want.
 4. Multi-user support
 
 ## DB Migration 
+
 ### Production
 ```sh
-pnpm generate
 pnpm db:migrate:production
 ```
 ### Local for development
 ```sh
-pnpm generate
 pnpm db:migrate:local
 ```
 ### Preview
 ```sh
-pnpm generate
 pnpm db:migrate:preview
 ```
 ## Development
-
 Run the dev server:
-
 ```sh
 pnpm dev
 ```
