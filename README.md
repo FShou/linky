@@ -20,7 +20,7 @@ You can use this by deploying this to Cloudflare Pages if you want.
 4. Multi-user support
 
 ## DB Migration 
-
+If you change your db name in CF Dashboard also change it in `package.json`
 ### Production
 ```sh
 pnpm db:migrate:prod
