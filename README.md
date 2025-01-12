@@ -38,3 +38,6 @@ Run the dev server:
 ```sh
 pnpm dev
 ```
+### Preview Branch
+You can see deplyed version off preview by pushing to branch other than main
+For the preview run DB migration also
