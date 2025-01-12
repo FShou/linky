@@ -1,0 +1,1 @@
+ALTER TABLE `Pages` ADD `description` text DEFAULT '';

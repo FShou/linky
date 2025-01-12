@@ -1,0 +1,25 @@
+name= "YOUR_PROJECT_NAME"
+pages_build_output_dir = "./build/client"
+
+## Production 
+[vars]
+VITE_DOMAIN_ORIGIN="YOUR-PROJECT.pages.dev"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "YOUR_DB"
+database_id = "YOUR_DB_ID"
+migrations_dir = "db/migrations"
+
+## Local
+[env.preview]
+name = "preview"
+
+[env.preview.vars]
+VITE_DOMAIN_ORIGIN="YOUR_NOT_MAIN_BRANCH.YOUR-PROJECT.pages.dev"
+
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "YOUR_PREVIEW_DB"
+database_id = "YOUR_PREVEW_DB_ID"
+migrations_dir = "db/migrations"

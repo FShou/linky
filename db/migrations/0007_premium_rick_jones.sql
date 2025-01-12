@@ -1,0 +1,1 @@
+ALTER TABLE `Pages` ADD `published` integer DEFAULT false NOT NULL;

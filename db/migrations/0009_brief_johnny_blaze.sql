@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `Sessions_session_token_unique` ON `Sessions` (`session_token`);
