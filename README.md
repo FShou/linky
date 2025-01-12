@@ -1,10 +1,31 @@
-# Welcome to Remix + Cloudflare!
+# Welcome to Linky
+![Linky](https://linky-8yt.pages.dev/preview-wa.png)
+Linky is crafted for simple link management.
+You can create and manage short-link as well creating linktree linke page.
+You can use this by deploying this to Cloudflare Pages if you want.
 
-- 📖 [Remix docs](https://remix.run/docs)
-- 📖 [Remix Cloudflare docs](https://remix.run/guides/vite#cloudflare)
+# Guides
+## Deployment
+1. Clone the repo
+2. Connect to Cloudflare Pages
+4. Configure DB
+3. Migrate DB
+6. Set Env
+8. open /seeder on first visit.
 
-## Migration 
-### Local
+## Usage
+1. Login default  username `admin`, password `123`
+2. Create Short-URL
+3. Create linktree like Page
+4. Multi-user support
+
+## DB Migration 
+### Production
+```sh
+pnpm generate
+pnpm db:migrate:production
+```
+### Local for development
 ```sh
 pnpm generate
 pnpm db:migrate:local
@@ -14,11 +35,6 @@ pnpm db:migrate:local
 pnpm generate
 pnpm db:migrate:preview
 ```
-### Production
-```sh
-pnpm generate
-pnpm db:migrate:production
-```
 ## Development
 
 Run the dev server:
@@ -26,17 +42,3 @@ Run the dev server:
 ```sh
 pnpm dev
 ```
-
-## Typegen
-
-Generate types for your Cloudflare bindings in `wrangler.toml`:
-
-```sh
-pnpm typegen
-```
-
-You will need to rerun typegen whenever you make changes to `wrangler.toml`.
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
