@@ -23,7 +23,7 @@ You can use this by deploying this to Cloudflare Pages if you want.
 
 ### Production
 ```sh
-pnpm db:migrate:production
+pnpm db:migrate:prod
 ```
 ### Local for development
 ```sh
